@@ -1,46 +1,40 @@
 {
-  "name": "hospital_information_systems",
-  "version": "1.0.0",
-  "description": "Hospital Information Systems",
-  "private": "true",
-  "scripts": {
-    "dev": "webpack serve --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js",
-    "start": "http-server ./build",
-    "lint:fix": "eslint --fix --ext js src"
-  },
-  "keywords": [],
-  "author": "dennnoval",
-  "license": "ISC",
+  "name": "hospital-information-systems",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
-    "http-server": "^0.12.3",
     "react": "^17.0.2",
-    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
   },
-  "devDependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/plugin-transform-runtime": "^7.13.15",
-    "@babel/preset-env": "^7.14.1",
-    "@babel/preset-react": "^7.13.13",
-    "babel-loader": "^8.2.2",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "css-loader": "^5.2.4",
-    "css-minimizer-webpack-plugin": "^3.0.0",
-    "eslint": "^7.26.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-webpack-plugin": "^2.5.4",
-    "html-webpack-plugin": "^5.3.1",
-    "mini-css-extract-plugin": "^1.6.0",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.36.2",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+  "scripts": {
+    "start": "BROWSER=none react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

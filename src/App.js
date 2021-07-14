@@ -1,17 +1,16 @@
 import React from 'react'
-import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import { Page1, Page2, Page3 } from './pages'
+import { Login, PatientDashboard } from './pages'
 
 export default function App () {
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-          <Page1/>
+          <Login/>
         </Route>
-        <Route exact path='/page2' component={Page2}/>
-        <Route exact path='/page3' component={Page3}/>
+        <Route path="/patient" component={PatientDashboard}/>
       </Switch>
     </Router>
   )
